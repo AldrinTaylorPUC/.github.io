@@ -76,6 +76,10 @@
     margin: 0 5px;
 }
 
-#toggler:hover {
+#logout {
+    color:#FFFFFF;
+}
+
+#logout, #toggler:hover {
     cursor: pointer;
 } 
