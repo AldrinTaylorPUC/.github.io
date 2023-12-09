@@ -1,4 +1,4 @@
-import { initializeData, loadData } from '/data/data.js';
+import { initializeData, loadData } from "/data/data.js";
 
 initializeData(); // Wait for asynchronous operations to complete
 
@@ -12,7 +12,6 @@ pesquisa.addEventListener('click', buscar)
 function buscar() {
   let nome = document.querySelector('#record').value;
   let registroEncontrado = false
-
 
   if (nome == "") { // se o nome do evento estiver vazio, retornar a mensagem de alerta
     alert('Digite um nome para pesquisar!');
