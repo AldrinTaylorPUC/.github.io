@@ -33,7 +33,6 @@ function fazerLogin() {
     let email = document.querySelector('#emailLogin').value;
     let senha = document.querySelector('#senhaLogin').value;
 
-    //   console.log(email);
     /* validação do usuário */
     validarUsuario(email, senha);
 
@@ -49,7 +48,6 @@ function validarUsuario(email, senha) {
         if (email == usuario.email && senha == usuario.senha) {
             localStorage.setItem('user-name', usuario.nome);
             logado = true;
-            // console.log("---");
             window.location.href = "../../templates/pagina-inicial/pagina-inicial.html"
         }
 
