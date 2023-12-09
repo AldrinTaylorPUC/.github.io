@@ -19,8 +19,13 @@ function loadRightContent() {
     user_icon.id = 'user-icon';
     user_icon.src = '../../components/header/img/user-icon.svg';
     right_content.appendChild(user_icon);
+
+    let toggler = document.createElement('img');
+    toggler.id = 'toggler';
+    toggler.src = '/components/header/img/toggler.svg';
+    right_content.appendChild(toggler);
   
-    user_icon.addEventListener('click', () => {
+    toggler.addEventListener('click', () => {
       const nav = document.querySelector('#nav')
       if (isDropped) {
         nav.style.display = 'none';
@@ -29,7 +34,6 @@ function loadRightContent() {
       }
       isDropped = !isDropped;
     });
-  
   
   } else {      
     let signup = document.createElement('a');
