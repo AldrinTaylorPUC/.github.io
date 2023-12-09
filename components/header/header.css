@@ -73,14 +73,8 @@
 }
 
 #right-content > * {
-#right-content > * {
     margin: 0 5px;
 }
-
-#toggler:hover {
-    cursor: pointer;
-} 
-
 
 #toggler:hover {
     cursor: pointer;
