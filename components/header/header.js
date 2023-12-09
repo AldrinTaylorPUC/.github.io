@@ -29,6 +29,7 @@ if (isLogged) {
 
 } else {      
   let signup = document.createElement('a');
+  let body = document.querySelector('body');
   signup.innerText = 'Logar';
   body.className = "sign-in-js";
   signup.href = '../../templates/cadastro-usuario/cadastro-usuario.html';
