@@ -1,4 +1,4 @@
-import { initializeData, loadData } from "../../data/data.js";
+import { initializeData, loadData } from "./data/data.js";
 
 initializeData(); // Wait for asynchronous operations to complete
 
@@ -26,7 +26,7 @@ function buscar() {
     if (evento.nome == nome) { // se o elemento.nome for igual ao digitado na pesquisa, retornar a informação cadastrada no JSON.
       registroEncontrado = true
       localStorage.setItem("evento", nome);
-      window.location.href = "../../templates/visualizar-eventos-individuais/visualizar-eventos-individuais.html";
+      window.location.href = "./templates/visualizar-eventos-individuais/visualizar-eventos-individuais.html";
     }
   });
 
@@ -36,7 +36,7 @@ function buscar() {
     if (tarefa.nome == nome) {// se o elemento.nome for igual ao digitado na pesquisa, retornar a informação cadastrada no JSON.
       registroEncontrado = true
       localStorage.setItem("tarefa", nome);
-      window.location.href = "../../templates/visualização-tarefas-individuais/visualização-tarefas-individuais.html";
+      window.location.href = "./templates/visualização-tarefas-individuais/visualização-tarefas-individuais.html";
     }
   });
 
