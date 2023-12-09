@@ -60,7 +60,7 @@ main {
   font-family: 'Inter', sans-serif;
 }
 
-#dados-do-evento {
+#dados{
   font-family: 'Inter', sans-serif;
 }
 
@@ -85,8 +85,8 @@ label {
 
 .form {
   display: flex;
-  gap: 200px;
-  padding: 0 130px;
+  padding: 0 200px;
+  align-items: center;
 }
 
 .responsaveis-bloco {
@@ -95,41 +95,6 @@ label {
   justify-content: center;
 }
 
-.input_button {
-  /*box*/
-  border-radius: 5px;
-  width: 100px;
-  position: relative;
-  top: 5px;
-  padding: 5px;
-  /*text*/
-  font-family: Helvetica;
-  font-weight: 700;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  /*coloring*/
-  background-color: #007ACC;
-  color: #FFFFFF;
-}
-
-.input_button2 {
- /*box*/
- border-radius: 5px;
- width: 100px;
- position: relative;
- top: 5px;
- padding: 5px;
- /*text*/
- font-family: Helvetica;
- font-weight: 700;
- text-align: center;
- vertical-align: middle;
- white-space: nowrap;
- /*coloring*/
- background-color:red;
- color: #FFFFFF;
-}
 
 .input_text {
   border-radius: 5px;
@@ -139,7 +104,6 @@ label {
   padding: 5px;
 }
 
-#buttons {
-display: flex;
-gap: 5px;
+#input_button2 {
+  background-color: red;
 }

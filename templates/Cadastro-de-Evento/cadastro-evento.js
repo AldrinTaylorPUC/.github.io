@@ -73,18 +73,20 @@ function remover() {
 };
 
 function recarregar_lista() {
-    let ul = document.getElementById('lista_convidados');
 
-    if (ul) {
+    let select = document.getElementById('lista_convidados');
+
+    if (select) {
         // Remove all <li> elements from the <ul>
-        while (ul.firstChild) {
-            ul.removeChild(ul.firstChild);
+        while (select.firstChild) {
+            select.removeChild(select.firstChild);
         }
 
         convidados.forEach((convidado) => {
-            let li = document.createElement('li');
-            li.innerText = convidado;
-            ul.appendChild(li);
+            let option = document.createElement('option');
+            option.innerText = convidado;
+            option.value = convidado;
+            select.appendChild(option);
         });
     }
 }

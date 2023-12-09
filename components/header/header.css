@@ -13,7 +13,7 @@
     height: 10vh;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 80px;
+    padding: 20px 70px;
     z-index: 1;
 
     /*font*/
@@ -61,19 +61,21 @@
 #nav-bar .links li {
     display: inline;
     margin-right: 16px;
-    border: solid  3px #e5e8eb;
-    border-radius: 5px;
     padding: 5px;   
 }
 
 
-#nav-bar .right-content {
+#right-content {
     color: inherit;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#nav-bar .right-content > * {
+#right-content > * {
     margin: 0 5px;
 }
+
+#toggler:hover {
+    cursor: pointer;
+} 

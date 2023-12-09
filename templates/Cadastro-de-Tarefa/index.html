@@ -12,73 +12,66 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;1,9..40,200&family=Inter&family=Poppins:ital,wght@1,100&display=swap"
     rel="stylesheet">
-  <title>Cadastro de tarefa</title>
+  <title>Cadastro de evento</title>
 </head>
 
 <body>
   <header id="header"></header>
-  <nav id="dropdawn"></nav>
+  <nav id="dropdown"></nav>
   <main>
     <div class="form">
-      <div class="dadas-da-tarefa-bloco">
+      <div>
         <div class="title">
-          <h1>Cadastre sua tarefa</h1>
+          <h1>Cadastre seu tarefa</h1>
         </div>
-        <h4 id="subtitle">Organize seu tarefa memorável</h4>
-        <p id="dados-da-tarefa"><b>Dados da tarefa</b></p>
+        <h2 class="dados"><b>Dados da tarefa</b></h3>
         <div class="nome-da-tarefa">
-          <br><label for="nome-da-tarefa">
-            Nome da tarefa <br><input type="text" name="nome" class="form_input">
+          <label for="nome">
+            Nome da tarefa: <br><input type="text" name="nome" class="input_text">
           </label>
           <br>
         </div>
-        <div class="fornecedor da tarefa">
-          <br><label for="fornecedor da tarefa">
-            Fornecedor da tarefa <br><input type="text" name="fornecedor" class="form_input">
-          </label><br>
-        </div>
-        <div class="data-da-tarefa">
-          <br><label for="data da tarefa">
-            Data da tarefa <br><input type="text" name="data" class="form_input">
-          </label>
-        </div>
-        <div class="custo da tarefa">
-          <label for="custo da tarefa">
-            Custo da tarefa <br><input type="text" name="custo" class="form_input">
+        <div>
+          <br><label for="fornecedor">
+            Fornecedor do serviço: <br><input type="text" name="fornecedor" class="input_text">
           </label>
           <br>
         </div>
-        <div id="div_button">
+        <div>
+          <br><label for="data">
+            Data de entrega: <br><input type="text" name="data" class="input_text">
+          </label>
+        </div>
+        <div>
+          <br><label for="custo">
+            Custo da tarefa: <br><input type="text" name="custo" class="input_text">
+          </label>
+          <br>
+        </div>
+        <div>
           <div type="button" id="button" class="btn"> Confirmar </div>
           <!-- <input type="submit" value="Faça seu login" id="button" class="btn" onclick="fazerLogin()"> -->
         </div>
       </div>
       <div class="form">
-        <div class="dados-do-evento-bloco">
+        <div>
 
           <div>
-            <h3>Adicionar / Remover tarefas</h3>
-            <label for="nome_completo">Digite o nome completo do participante:</label><br>
-            <input class="input_text" type="text" id="nome_completo" name="nome_completo" onfocus="this.value=''"
-              placeholder="Nome do participante"><br><br>
-            <div id="buttons">
-              <div id="input_button" class="input_button">Adicionar</div>
-              <div id="input_button2" class="input_button2">Remover</div>
+            <h2 class="dados"><b>Adicionar / Remover Participantes</b></h3>
+            <label for="nome_completo">Nome do participante:</label><br>
+            <div id="adicionar">
+              <input class="input_text" type="text" id="nome_completo" name="nome_completo" onfocus="this.value=''"
+              placeholder="Nome do participante"></input>
+              <div id="input_button" class="btn">Adicionar</div>
+            </div>
+            <br>
+            <label for="nomecompleto">Lista de participantes:</label><br>
+            <div id="remover">
+              <select class="input_text" id="lista_participantes"></select>            
+              <div id="input_button2" class="btn">Remover</div>
             </div>
           </div>
 
-          <h3 id="responsaveis-title">Lista de Tarefas</h3>
-
-          <form>
-            <fieldset>
-              <legend>Lista</legend>
-              <div class="input-container">
-                <label for="lista">Participantes:
-                  <ul id="lista_participantes"></ul>
-                </label>
-              </div>
-            </fieldset>
-          </form>
         </div>
       </div>
     </div>
